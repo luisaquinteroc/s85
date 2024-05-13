@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="YPAPkU9X9@vexhibU:n%">HUMIDITY</variable></variables><block type="device_forever" id="99)Kom;;+W3M?edAJB|N" x="0" y="0"><statement name="HANDLER"><block type="variables_change" id="9x;7|B+-g0SoU27+%GsB"><field name="VAR" id="YPAPkU9X9@vexhibU:n%">HUMIDITY</field><value name="VALUE"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="device_get_analog_pin" id="`{XFF/qSJQZthp)[-;Q8"><field name="name">AnalogPin.P0</field></block></value><next><block type="controls_if" id="v^(Ka7*qS7[KoZN?,RxW"><mutation elseif="2"></mutation><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="XZ(O[vq^S-d4y@ddp^ho"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="X`8g8qW2cH6!Ac.9`g~K"><field name="VAR" id="YPAPkU9X9@vexhibU:n%">HUMIDITY</field></block></value><value name="B"><shadow type="math_number" id="B}7gLN.$:@_XSnMrecB%"><field name="NUM">341</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="!B{]L|!@Hw/wvk!Ri22S"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></statement><value name="IF1"><block type="logic_operation" id="`9(G$Yqk#GvCnR]~}uax"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="k`etrx.)|*wyLZenR:{B"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="g|k_8op}EQfiFp)5x9zC"><field name="VAR" id="YPAPkU9X9@vexhibU:n%">HUMIDITY</field></block></value><value name="B"><shadow type="math_number" id="OdNq^5Ul_?|Z$~Y2Z5@["><field name="NUM">342</field></shadow></value></block></value><value name="B"><block type="logic_compare" id="+3;P!q*oJts/X(0wIh8G"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="-hBzFMh=bWj+.]iYHXQ-"><field name="VAR" id="YPAPkU9X9@vexhibU:n%">HUMIDITY</field></block></value><value name="B"><shadow type="math_number" id="tl@3?gLPNDo!(h6Tf{l:"><field name="NUM">682</field></shadow></value></block></value></block></value><statement name="DO1"><block type="device_show_leds" id="TE@X_6W10!icP6!HPbb?"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        . # . # . 
+        . . # . .
+        `</field></block></statement><value name="IF2"><block type="logic_compare" id="d/HZ=$vWciuw`N~8LZ#y"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="Io);r_Hng]CW?0-e*|ja"><field name="VAR" id="YPAPkU9X9@vexhibU:n%">HUMIDITY</field></block></value><value name="B"><shadow type="math_number" id="+Yj,}@Ndd1ar2Pg1@4!t"><field name="NUM">683</field></shadow></value></block></value><statement name="DO2"><block type="device_show_leds" id="F=Me4o*E1~N+elIzh@VK"><field name="LEDS">`
+        . . . . . 
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . . . . .
+        `</field></block></statement></block></next></block></statement></block></xml>
